@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 /*----Var----*/
 
 :root {
-  --font-family: "Roboto", sans-serif;
+  --font-family: 'Roboto', sans-serif;
   --primary-color: #212121;
   --secondary-color: #2196f3; /*----nav-link .link----*/
   --third-color: #ffffff; /*---index-button---*/
   --forth-color: blue; /*--logo---*/
   --letter-spacing: 0.03em; /*----typical----*/
-  --logo-font-family: "Raleway"; /*---logo---*/
+  --logo-font-family: 'Raleway'; /*---logo---*/
   --fifth-color: #000000; /*--logo---*/
   --logo-font-style: normal; /*---logo--*/
 
@@ -62,7 +62,8 @@ h3,
 h4,
 h5,
 ul,
-p {
+p,
+span {
   margin: 0px;
   padding: 0px;
 }
@@ -146,7 +147,7 @@ p {
 }
 
 .nav_list_item_link:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 46px;
@@ -568,9 +569,11 @@ p {
   color: var(--third-color);
   cursor: pointer;
   font-style: normal;
+  text-decoration: none;
 }
 .mail,
 .tel {
+  text-decoration: none;
   display: inline;
   color: var(--color-mail);
   cursor: pointer;
@@ -593,23 +596,20 @@ p {
 }
 .footer_center {
   margin-right: 78px;
-}
-
-.footer_title {
-  margin-bottom: 20px;
   color: var(--third-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
+
 .footer_social_list {
   display: flex;
   justify-content: center;
   list-style: none;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .footer_social_item:not(:last-child) {
   margin-right: 10px;
@@ -634,8 +634,9 @@ p {
   transition: var(--footer_social_link_transition);
 }
 /*--------------footer-newsletter--------------*/
-.footer_center {
-  margin-right: 78px;
+.footer_newsletter {
+  display: flex;
+  flex-direction: column;
 }
 .newsletter_email:focus {
   border-color: var(--secondary-color);
@@ -644,6 +645,7 @@ p {
 .newsletter_email {
   display: flex;
   align-items: center;
+  margin-top: 20px;
   margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
@@ -661,10 +663,22 @@ p {
 }
 .newsletter_form {
   display: flex;
+
+  color: var(--third-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+}
+.newsletter_email_blue {
+  display: flex;
 }
 .newsletter_button {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  height: 50px;
   padding: 10px 24px 10px 42px;
   width: 200px;
   font-weight: 700;
@@ -828,7 +842,7 @@ p {
 }
 
 .modal_form_policy_text::before {
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 7px;
   width: 16px;
@@ -855,6 +869,8 @@ p {
 
 .modal_form_policy_link {
   color: var(--secondary-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal_form_button {
@@ -869,11 +885,14 @@ p {
   letter-spacing: 0.06em;
   color: var(--third-color);
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
 }
-
+.modal_form_button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /*--------------------------------------------portfolio----*/
 .portfolio_section {
   display: block;
