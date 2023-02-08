@@ -1,0 +1,133 @@
+.footer {
+  display: block;
+
+  padding: 60px 0;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: var(--letter-spacing);
+}
+
+.footer__first--part {
+  margin-right: 70px;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer__contact--list {
+  color: var(--mail-color);
+}
+.footer__contact--item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__contact--link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__contact--link:hover,
+.footer__contact--link:focus {
+  color: var(--secondary-color);
+}
+
+.footer__contact--link-street {
+  cursor: pointer;
+  color: var(--third-color);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*--foter--center--*/
+
+.footer__center {
+  margin-right: 78px;
+  color: var(--third-color);
+  text-transform: uppercase;
+}
+
+.footer__icon--list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+.footer__icon--item:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer__icon--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  fill: var(--third-color);
+  background: var(--footer-social-link-background);
+  border-radius: 50%;
+}
+.footer__icon--link:hover,
+.footer__icon--link:focus {
+  background-color: var(--secondary-color);
+  fill: var(--third-color);
+  transition: var(--transition-icon-social);
+}
+/*--footer--newsletter--*/
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--third-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: var(--letter-spacing);
+}
+
+.footer__form--newsletter {
+  display: flex;
+}
+.footer__newsletter--email {
+  display: flex;
+}
+
+.footer__input--newsletter:focus {
+  border-color: var(--secondary-color);
+}
+
+.footer__input--newsletter {
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  border: var(--input-border);
+
+  filter: var(--filter-footer);
+  border-radius: 4px;
+  background-color: var(--slider-color);
+  outline: none;
+  transition: var(--input-transition);
+
+  letter-spacing: var(--letter-spacing);
+  color: var(--mail-color);
+}
+
+.footer__button--newsletter {
+  display: flex;
+
+  margin-top: 20px;
+  height: 50px;
+  padding: 10px 24px 10px 42px;
+  width: 200px;
+
+  color: var(--third-color);
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow-button-banner);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer__button--icon {
+  margin-left: 24px;
+}

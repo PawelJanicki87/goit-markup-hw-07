@@ -1,0 +1,36 @@
+.customers__title {
+  padding-bottom: 50px;
+}
+
+.customers__list {
+  display: flex;
+
+  margin: auto;
+}
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+.customers__item {
+  display: flex;
+  justify-content: center;
+}
+
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .customers__link:hover,
+  .customers__link:focus {
+    border-color: var(--secondary-color);
+    fill: var(--secondary-color);
+  }
+  .customers__social--link {
+    width: 170px;
+    height: 92px;
+    fill: var(--social-logo-color);
+    border: 1px solid var(--social-logo-color);
+    border-radius: 4px;
+    transition: var(--transition-icon-social);
+  }
+}

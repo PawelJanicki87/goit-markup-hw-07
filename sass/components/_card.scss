@@ -1,0 +1,76 @@
+.card .container {
+  justify-content: center;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card {
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      box-shadow: var(--card-img-box-shadow);
+
+      & .card__overlay {
+        transform: translateY(100%);
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: var(--letter-spacing);
+    color: var(--sixth-color);
+  }
+  &__position {
+    position: relative;
+    overflow: hidden;
+  }
+  &__photo {
+    width: 370px;
+    height: 294px;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    padding: 49px 45px 49px 24px;
+
+    background: var(--overlay-background);
+
+    transform: translateY(100%);
+    transition: var(--main-transition);
+    pointer-events: none;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.556;
+    color: var(--third-color);
+    letter-spacing: var(--letter-spacing);
+  }
+}

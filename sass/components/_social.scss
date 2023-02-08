@@ -1,0 +1,28 @@
+.team__icon--list {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+.team__icon--link {
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--third-color);
+  border-radius: 50%;
+  transition: var(--transition-icon-social);
+}
+
+.team__icon--link:hover,
+.team__icon--link:focus {
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transition: var(--transition-icon-social);
+}
+
+.team__icon--social {
+  transition: var(--transition-icon-social);
+}

@@ -1,0 +1,28 @@
+.contact__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item {
+  display: flex;
+  white-space: nowrap;
+}
+.contact__link {
+  gap: 50px;
+  color: var(--sixth-color);
+  transition: var(--main--transition);
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--secondary-color);
+}
+
+.contact__link--product-tel {
+  margin-left: 50px;
+}
+.contact__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}

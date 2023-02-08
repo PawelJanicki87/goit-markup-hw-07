@@ -1,0 +1,32 @@
+.header {
+  border-bottom: var(--header-border);
+}
+
+.banner {
+  background-color: var(--third-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contents {
+  padding-top: 94px;
+}
+
+.work,
+.team,
+.customers,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: var(--background-color-team);
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--slider-color);
+}

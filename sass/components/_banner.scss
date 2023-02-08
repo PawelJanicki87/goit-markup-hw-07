@@ -1,0 +1,18 @@
+.banner__title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  color: var(--third-color);
+}
+
+.banner__button {
+  padding: 10px 41px;
+
+  border-radius: 4px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  box-shadow: var(--box-shadow-banner-button);
+  cursor: pointer;
+  transition: var();
+}
