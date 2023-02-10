@@ -2,7 +2,7 @@
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 30px;
-  color: var(--third-color);
+  color: $third-color;
 }
 
 .banner__button {
@@ -10,9 +10,9 @@
 
   border-radius: 4px;
   border: none;
-  background-color: var(--secondary-color);
-  color: var(--third-color);
-  box-shadow: var(--box-shadow-banner-button);
+  background-color: $secondary-color;
+  color: $third-color;
+  box-shadow: $box-shadow-button-banner;
   cursor: pointer;
-  transition: var();
+  transition: $transition-banner-button;
 }

@@ -1,4 +1,10 @@
 /*--header--*/
+body {
+  font-family: $main-font;
+  color: $primary-color;
+  background-color: $background-body-color;
+}
+
 .text__link {
   font-size: 14px;
   font-weight: 500;
@@ -25,24 +31,23 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.143;
-
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
 }
 .text__contents--subtitle {
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
 }
 /*--work--team--customers--*/
 .text__center {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
 }
 .text__team {
   font-weight: 500;
   font-size: 16px;
   line-height: 18.75px;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
 }

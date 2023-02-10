@@ -4,8 +4,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--background-backdrop);
-  transition: var(--transition-backdrop);
+  background: $background-backdrop;
+  transition: $transition-backdrop;
 }
 .is-hidden {
   opacity: 0;

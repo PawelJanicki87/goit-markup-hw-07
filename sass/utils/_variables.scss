@@ -1,6 +1,6 @@
 $main-font: 'Roboto', sans-serif;
 $second-font: 'Raleway', sans-serif;
-$letter-pacing: 0.03em; /*----typical----*/
+$letter-spacing: 0.03em; /*----typical----*/
 
 $primary-color: #212121;
 $secondary-color: #2196f3; /*----nav-link .link----*/
@@ -48,7 +48,8 @@ $filter-footer: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
 /*-------------transicion--------------*/
 
-$main--transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$main-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+$transitionn-card-overlay: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $transition-banner-button: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $transition-icon-social: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
   fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);

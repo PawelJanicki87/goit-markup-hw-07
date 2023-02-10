@@ -15,62 +15,71 @@
     align-items: center;
     gap: 30px;
   }
+
   &__item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
     transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
-      box-shadow: var(--card-img-box-shadow);
+    &:hover,
+    &:focus {
+      box-shadow: $card-img-box-shadow;
+    }
 
-      & .card__overlay {
-        transform: translateY(100%);
-        pointer-events: auto;
-      }
+    &.card__overlay {
+      transform: translateY(100%);
+      pointer-events: auto;
     }
   }
+}
 
+.card {
+  &__info {
+    padding: 20px 0 24px 24px;
+
+    border-left: $border-portfolio-wraper;
+    border-right: $border-portfolio-wraper;
+    border-bottom: $border-portfolio-wraper;
+    cursor: pointer;
+  }
   &__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--primary-color);
   }
 
   &__subtitle {
     font-size: 16px;
     line-height: 1.875;
-    letter-spacing: var(--letter-spacing);
-    color: var(--sixth-color);
+    letter-spacing: $letter-spacing;
+    color: $sixth-color;
   }
   &__position {
     position: relative;
     overflow: hidden;
+    cursor: pointer;
   }
   &__photo {
     width: 370px;
     height: 294px;
   }
-
   &__overlay {
     position: absolute;
+    top: 0;
+    bottom: 0;
     inset: 0;
     padding: 49px 45px 49px 24px;
 
-    background: var(--overlay-background);
+    background-color: $overlay-background;
 
     transform: translateY(100%);
-    transition: var(--main-transition);
     pointer-events: none;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   &__text {
     font-size: 18px;
     line-height: 1.556;
-    color: var(--third-color);
-    letter-spacing: var(--letter-spacing);
+    color: $third-color;
+    letter-spacing: $letter-spacing;
   }
 }

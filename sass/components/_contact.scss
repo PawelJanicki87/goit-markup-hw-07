@@ -9,13 +9,13 @@
 }
 .contact__link {
   gap: 50px;
-  color: var(--sixth-color);
-  transition: var(--main--transition);
+  color: $sixth-color;
+  transition: $main-transition;
 }
 
 .contact__link:hover,
 .contact__link:focus {
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 
 .contact__link--product-tel {

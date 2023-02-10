@@ -1,9 +1,23 @@
-@use './utils/root';
-@use './utils/variables';
-@use './utils/visually-hiden';
+@import './utils/visually-hiden';
+@import './utils/typography';
+@import './utils/variables';
 
-@use './base';
+@import './components/backdrop';
+@import './components/banner';
+@import './components/button';
+@import './components/card';
+@import './components/contact';
+@import './components/container';
+@import './components/contents';
+@import './components/customers';
+@import './components/footer';
+@import './components/logo';
+@import './components/modal';
+@import './components/navigation';
+@import './components/portfolio';
+@import './components/reset';
+@import './components/section';
+@import './components/social';
+@import './components/team';
 
-@use './components';
-
-@use './layout';
+@import './components/work';

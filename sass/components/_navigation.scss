@@ -11,14 +11,14 @@ nav {
   position: relative;
 }
 .nav__link--product {
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 .nav__link {
-  color: var(--primary-color);
-  transition: var(--main--transition);
+  color: $primary-color;
+  transition: $main-transition;
 }
 .nav__link.active:after {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
 }
 
 .nav__link:after {
@@ -34,5 +34,5 @@ nav {
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--secondary-color);
+  color: $secondary-color;
 }

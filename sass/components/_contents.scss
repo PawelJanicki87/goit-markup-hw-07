@@ -15,14 +15,14 @@
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--background-color-team);
+  background-color: $background-color-team;
 }
 
 .contents__title {
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 .contents__text {
   margin-top: 10px;
-  color: var(--sixth-color);
+  color: $sixth-color;
 }
