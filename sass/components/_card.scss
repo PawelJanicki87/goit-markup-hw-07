@@ -1,85 +1,69 @@
-.card .container {
-  justify-content: center;
+.card__list {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
 }
 
-.card {
-  &__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    align-items: center;
-    gap: 30px;
-  }
+.card__item {
+  position: relative;
+  transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__item {
-    transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      box-shadow: $card-img-box-shadow;
-    }
-
-    &.card__overlay {
-      transform: translateY(100%);
-      pointer-events: auto;
-    }
+  &:hover,
+  &:focus {
+    box-shadow: $card-img-box-shadow;
   }
 }
+.card__info {
+  padding: 20px 0 24px 24px;
 
-.card {
-  &__info {
-    padding: 20px 0 24px 24px;
+  border-left: $border-portfolio-wraper;
+  border-right: $border-portfolio-wraper;
+  border-bottom: $border-portfolio-wraper;
+  cursor: pointer;
+}
+.card__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 
-    border-left: $border-portfolio-wraper;
-    border-right: $border-portfolio-wraper;
-    border-bottom: $border-portfolio-wraper;
-    cursor: pointer;
-  }
-  &__title {
-    margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
+.card__subtitle {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: $letter-spacing;
+  color: $sixth-color;
+}
+.card__position {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
 
-  &__subtitle {
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: $letter-spacing;
-    color: $sixth-color;
-  }
-  &__position {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  &__photo {
-    width: 370px;
-    height: 294px;
-  }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    inset: 0;
-    padding: 49px 45px 49px 24px;
+  inset: 0;
+  padding: 49px 45px 49px 24px;
+  height: 294px;
+  background: $overlay-background;
+  top: 0;
+  transform: translateY(101%);
+  transition: $transition-card-overlay;
+  pointer-events: auto;
+}
+.card__item:hover .card__overlay {
+  transform: translateY(0);
+}
 
-    background-color: $overlay-background;
-
-    transform: translateY(100%);
-    pointer-events: none;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__text {
-    font-size: 18px;
-    line-height: 1.556;
-    color: $third-color;
-    letter-spacing: $letter-spacing;
-  }
+.card__overlay-text {
+  font-size: 18px;
+  line-height: 1.556;
+  color: $third-color;
+  letter-spacing: $letter-spacing;
 }
